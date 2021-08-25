@@ -1,0 +1,97 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar__box">
+    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+    <input type="text" class="weui-search-bar__input" placeholder="请输入名字" />
+  </view>
+</view>
+<view class="birthday">
+  <view class="xiantop"></view>
+  <view class="birthda_k">
+    <view class="b_title">董阿峰·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">5天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">郝燕·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">18天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">汪芝·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">19天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">宋妮妮·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">24天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">李阳·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">25天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">五七二·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">26天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">桥不慎·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">27天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">小曼杨·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">28天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">王大翠·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">29天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">马虎·<text class="date_info">2010.8.23</text> </view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">30天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+  <view class="birthda_k">
+    <view class="b_title">马水·<text class="date_info">2010.8.23</text></view>
+    <view class="imgatext">
+      <image class="dengpao" src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E6%8F%90%E7%A4%BA%403x.png"></image>
+      <view class="day">31天</view>
+    </view>
+  </view>
+  <view class="xianup"></view>
+</view>

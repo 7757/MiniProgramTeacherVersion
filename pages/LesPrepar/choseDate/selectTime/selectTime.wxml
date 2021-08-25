@@ -1,0 +1,20 @@
+<calendar calendarConfig="{{calendarConfig}}" bind:onTapDay="onTapDay" bind:afterTapDay="afterTapDay" bind:onSwipe="onSwipe" bind:whenChangeWeek="whenChangeWeek" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"></calendar>
+
+
+  <view class="time_contenter">
+  <view bindtap="choseHander" data-index='{{index}}' data-optional="{{item.optional}}" wx:for="{{atmDateTime}}" wx:key="id"  class=" {{item.optional?'tiem_item':'tiem_item_no'}}" style="{{key===index?'background:rgba(0,132,137,1);color:#fff':''}}" >{{ item.timeSlot}}</view>
+    
+  </view>
+
+
+  <view class="bottom_bar">
+    <view class="next_time" bindtap="backHander">确定</view>
+  </view>
+
+
+
+<view class="mask" catchtouchmove="preventTouchMove" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+
+<view class="modalDlg" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+{{jumpTips}}
+</view>

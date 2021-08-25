@@ -1,0 +1,56 @@
+<view class="flex b tb ac" wx:if="{{calendar}}">
+  <view class="calendar b tb">
+    <!-- 头部操作栏 -->
+
+    <!-- calendarConfig.hideHeadOnWeekMode 是否展示周栏-->
+    <view wx:if="{{!calendarConfig.hideHeadOnWeekMode}}" class="handle {{calendarConfig.theme}}_handle-color fs28 b lr ac pc">
+
+      <!-- 双击跳转到今天 -->
+      <view class="flex date-in-handle b lr cc top_title" bindtap="doubleClickToToday">{{calendar.curYear }} 年 {{calendar.curMonth}} 月 </view>
+
+
+    </view>
+    <!-- 星期栏 -->
+    <view class="weeks b lr ac {{calendarConfig.theme}}_week-color">
+      <view class="week fs28" wx:for="{{calendar.weeksCh}}" wx:key="index" data-idx="{{index}}">{{item}}</view>
+    </view>
+
+
+
+
+
+    <!-- 日历面板主体 -->
+    <scroll-view  scroll-x="true" scroll-into-view="{{calendarConfig.toIndex}}" android:scrollbars="none"  class="zanshi" bindtouchstart="calendarTouchstart" bindtouchmove="calendarTouchmove" bindtouchend="calendarTouchend">
+
+
+      <!-- 本月日期格子 -->
+      <view class="aaaa grid {{calendarConfig.theme}}_normal-date b ac pc" wx:for="{{calendar.days}}"  wx:key="index" data-disable="{{item.disable}}" data-idx="{{index}}" id="a{{index}}" bindtap="tapDayItem" wx:if="{{ index >= calendarConfig.currtenDate-1}}" >
+        <view class="date-wrap b cc">
+          <view class="date b ac pc {{item.class ? item.class  : ''}} {{calendarConfig.chooseAreaMode ? 'date-area-mode' : ''}} {{(item.week === 0 || item.week === 6) ? calendarConfig.theme + '_weekend-color' : ''}} {{calendar.todoLabelCircle && item.showTodoLabel && !item.choosed ? calendarConfig.theme + '_todo-circle todo-circle' : '' }} {{item.isToday ? calendarConfig.theme + '_today' : ''}} {{item.choosed ? calendarConfig.theme + '_choosed' : ''}} {{item.disable ? calendarConfig.theme + '_date-disable' : ''}}">
+          
+              {{calendarConfig.markToday && item.isToday ? calendarConfig.markToday : item.day}} 
+     
+  
+         
+   
+  
+
+
+
+           
+          </view>
+        </view>
+      </view>
+      <!-- 下月日期格子 -->
+
+    </scroll-view>
+
+
+
+
+  </view>
+
+
+
+
+</view>

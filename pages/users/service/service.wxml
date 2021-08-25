@@ -1,0 +1,13 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">联系客服</view>
+        <view class="page__desc">点击下面微信号即可复制，然后去添加好友的地方粘贴即可</view>
+    </view>
+    <view class="page__bd page__bd_spacing">
+     <view class=" add_content" bindtap="addTime">在线客服</view>
+     <view class=" add_content" bindtap='bodadianhua'>点击拨打客服电话</view>
+     <view class=" add_content"data-text="{{contents}}" bindtap="tianjiaweixin">客服微信：{{contents}}</view>
+       
+
+    </view>
+</view>

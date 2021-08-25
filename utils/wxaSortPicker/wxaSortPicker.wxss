@@ -1,0 +1,45 @@
+/* 右侧首字母样式 */
+
+.wxaSortPickerTag {
+  background-color: rgba(241, 241, 241, 1);
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 56rpx;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(71, 71, 71, 1);
+}
+
+/*字母下面的文字样式 */
+
+.wxaSortPickerItem {
+  height: 48px;
+}
+
+/* 字母下面的内容样式 */
+
+.wxaSortPickerItem-box {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 1);
+  padding: 0 56rpx;
+  line-height: 48px;
+}
+
+.wxaSortPickerTemTags {
+  position: fixed;
+  top: 62%;
+  right: 20rpx;
+  color: (221, 221, 221);
+  transform: translate(0, -50%);
+}
+
+.wxaSortPickerTemTag {
+  text-align: center;
+  padding: 2rpx;
+  font-size: 24rpx;
+  line-height: 28rpx;
+}
+/* .wxaSortPickerList{
+  padding-bottom: 50px;
+} */

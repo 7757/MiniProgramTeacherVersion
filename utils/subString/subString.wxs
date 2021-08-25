@@ -1,0 +1,150 @@
+var sub = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 82) {
+    return val.substring(0, 79) + "...";
+  } else {
+    return val;
+  }
+}
+var subThere = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 39) {
+    return val.substring(0, 35) + "...";
+  } else {
+    return val;
+  }
+}
+
+// 老师页面
+var subTeacher = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 25) {
+    return val.substring(0, 25) 
+  } else {
+    return val;
+  }
+}
+
+// 老师页面
+var subTeachers = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 23) {
+    return val.substring(0, 23)
+  } else {
+    return val;
+  }
+}
+
+
+
+//评价页面
+var strLength=function(val){
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 82) {
+    return true;
+  } else {
+    return false;
+  }
+}
+//
+var strLengthThere = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 39) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// 老师介绍页面
+var strLengthThear = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 25) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+var strLengthThears = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 25) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+
+var strLengthProblem = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 47) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+
+var subProblem = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 47) {
+    return val.substring(0, 45) ;
+  } else {
+    return val;
+  }
+}
+
+
+
+var subClassIn = function (val) {
+  if (val.length == 0 || val == undefined) {
+    return;
+  }
+  if (val.length > 6) {
+    return val.substring(0, 6) + "...";
+  } else {
+    return val;
+  }
+}
+
+
+module.exports.subClassIn = subClassIn;
+
+// 常见问题
+module.exports.strLengthProblem = strLengthProblem;
+module.exports.subProblem = subProblem;
+
+
+module.exports.sub = sub;
+module.exports.strLength = strLength;
+
+
+module.exports.subThere = subThere;
+module.exports.strLengthThere = strLengthThere; 
+
+module.exports.strLengthThear = strLengthThear; 
+module.exports.subTeacher = subTeacher;
+module.exports.strLengthThears = strLengthThears;
+module.exports.subTeachers = subTeachers;

@@ -1,0 +1,33 @@
+page {
+  background-color: #fff;
+}
+
+.button-sp-area {
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.mini-btn {
+  margin: 0 4px;
+}
+
+.weui-btn {
+  color: #fff;
+  background-color: #0ba0a5;
+}
+
+.add_content {
+  margin: 0 auto;
+  width: 638rpx;
+  height: 82rpx;
+  border-radius: 8rpx;
+  background-color: #ffffffff;
+  border: 2rpx solid rgba(0, 132, 137, 1);
+  font-size: 32rpx;
+  font-weight: 550;
+  color: rgba(0, 132, 137, 1);
+  line-height: 82rpx;
+  text-align: center;
+  margin-bottom: 60rpx;
+}

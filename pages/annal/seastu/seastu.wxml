@@ -1,0 +1,27 @@
+<view class="" catchtouchmove="stopTouchMove">
+  <view class="weui-search-bar">
+    <view class="weui-search-bar__box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar__input" placeholder="请输入名字" />
+    </view>
+  </view>
+
+  <view class="t_zuij">最近的搜索</view>
+
+  <scroll-view scroll-x class="scroll-header">
+    <view class="wrap1">
+      <view class="text">全部学生</view>
+      <view class="text">孟浩然</view>
+      <view class="text">李白</view>
+      <view class="text">张举义</view>
+      <view class="text">朱文章</view>
+      <view class="text">唐老鸭</view>
+      <view class="text">米老师</view>
+      <view class="text">皮卡丘</view>
+    </view>
+  </scroll-view>
+  <view class="t_zuij" style="margin-top: 10px;">所有学生</view>
+  <view style="height: 10px;"></view>
+  <import src="../../../utils/wxaSortPicker/wxaSortPicker.wxml" />
+  <template is="wxaSortPicker" data="{{wxaSortPickerData,dataType}}" />
+</view>

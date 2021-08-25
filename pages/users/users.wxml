@@ -1,0 +1,68 @@
+<!--index.wxml-->
+<view class="container">
+
+  <!--头像与昵称-->
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <view class="foot">
+        <image class="xing" src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/me/%E6%98%9F%E6%98%9F-01%20copy%204%402x.png"></image>
+        <view class="pf">4.98</view>
+        <view class="pl">68条评论</view>
+      </view>
+    </block>
+  </view>
+
+  <!--功能列表-->
+  <view class="content weui-cells weui-cells_after-title">
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="../users/info/info" class="weui-cell weui-cell_example weui-cell_access" hover-class="btn-hover">
+        <view class="weui-cell__bd">个人资料</view>
+        <image src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/me/%E4%B8%AA%E4%BA%BA%E8%B5%84%E6%96%99%403x.png" style="margin-right: 32rpx;vertical-align: middle;width:46rpx; height: 36rpx;"></image>
+      </navigator>
+      <navigator url="../users/desc/desc" class="weui-cell weui-cell_access" hover-class="btn-hover">
+        <view class="weui-cell__bd">个人描述</view>
+        <image src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/%E4%B8%AA%E4%BA%BA%E6%8F%8F%E8%BF%B0%403x.png" style="margin-right: 32rpx;vertical-align: middle;width:40rpx; height: 44rpx;"></image>
+      </navigator>
+      <navigator url="../users/birthday/birthday" class="weui-cell weui-cell_example weui-cell_access" hover-class="btn-hover">
+        <view class="weui-cell__bd">生日明细</view>
+        <image src="https://sbkteacher.oss-cn-hangzhou.aliyuncs.com/my/birthday.png" style="margin-right: 32rpx;vertical-align: middle;width:44rpx; height: 42rpx;"></image>
+      </navigator>
+      <navigator url="../users/service/service" class="weui-cell weui-cell_example weui-cell_access" hover-class="btn-hover">
+        <view class="weui-cell__bd">联系客服</view>
+        <image src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/me/%E5%AE%A2%E6%9C%8D%403x.png" style="margin-right: 32rpx;vertical-align: middle;width:44rpx; height: 40rpx;"></image>
+      </navigator>
+     
+      <view bindtap="openDialog" class="weui-cell weui-cell_example weui-cell_access" hover-class="btn-hover">
+        <view class="weui-cell__bd">关于ET英孚英语</view>
+        <image src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/me/%E5%85%B3%E4%BA%8EET%E8%8B%B1%E5%AD%9A%E8%8B%B1%E8%AF%AD%403x.png" style="margin-right: 32rpx;vertical-align: middle;width:46rpx; height: 42rpx;"></image>
+      </view>
+
+    </view>
+
+    
+  </view>
+
+</view>
+
+
+
+
+<view class="layer_shown" bindtap="hideModal" wx:if="{{showModalStatus }}"></view>
+<!--弹出框  -->
+<view animation="{{animationData}}" catchtouchmove="true" class="layer_shown_box" wx:if="{{showModalStatus}}">
+  <view class="top_teacher">
+    <text class="teacher_title">关于英孚英语</text>
+    <view class="bolck" catchtouchmove="true" bindtap="hideModal" wx:if="{{showModalStatus}}">
+      <image src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/home/cancelIoc.png"></image>
+    </view>
+   
+  </view>
+   <view class="main_title">概要</view>
+  <scroll-view scroll-y="true" class="scrool_style">
+    <text class="content_info"> 世事安稳，岁月静好。电影里才有疯子。麦克墨菲在疯人院里带领一群精神病人揭竿而起，怼天怼地； 饿了三天的黑皮为了抢一口面包被店主追上高架桥，末路狂奔； 杰克和泰勒在午夜的搏击俱乐部里挥拳相向，鲜血淋漓。 屏幕对面，我们把爆米花塞进嘴里，哭成狗或者笑成狗。电影散场，各自回家。 真正的疯子，从来不看电影。他们把别人的目光变成聚光灯，把自己的生活变成真人秀，手提钢刀用肉身串演一个浓重的角色。 他们的人生结局无外乎两种：黄袍加身，或者玉石俱焚。阿里云这群疯子，就用56度的荷尔蒙，在横跨十年的悠长画布上涂抹了这样一个故事。</text>
+  </scroll-view>
+
+</view>

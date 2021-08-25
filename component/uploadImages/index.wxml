@@ -1,0 +1,24 @@
+<view class='content'>
+  <view class='img-box'>
+    <view class='img-list'>
+      <block wx:for="{{detailPics}}" wx:key="index">
+        <view class='img-item'>
+          <image src='{{item}}' bindlongpress="bindlongpressimg" data-id='{{index}}'></image>
+        </view>
+      </block>
+      <view wx:if="{{detailPics.length<5}}" class='chooseimg' bindtap='uploadDetailImage'>
+        <view class="weui_uploader">
+          
+          <view class="list_up" >
+            <image src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/school/image/7a97b5069447629cf8c74442d6b814d.png"></image>
+          </view>
+          <view class="list_up">
+          <text class="tipss">{{currCount}}/5</text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+    <view class='tips'>长按对应的图片即可删除</view>
+  </view>
+</view>

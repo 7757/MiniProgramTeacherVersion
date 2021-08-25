@@ -1,0 +1,52 @@
+.weui-search-bar {
+  width: 90%;
+  margin: 0px auto;
+  background-color: transparent;
+}
+
+.weui-search-bar__box {
+  background-color: rgba(241, 241, 241, 1);
+  border-radius: 4px;
+}
+
+.t_zuij {
+  width: 85%;
+  margin: 0px auto;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(22, 8, 10, 1);
+}
+
+.scroll-header {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.wrap1 {
+  margin-left: 6%;
+}
+
+.text {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  display: inline-block;
+  border: 1px solid rgba(238, 238, 238, 1);
+  text-align: center;
+  line-height: 40px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 1);
+}
+
+/*************************************************/
+@import "../../../utils/wxaSortPicker/wxaSortPicker.wxss";

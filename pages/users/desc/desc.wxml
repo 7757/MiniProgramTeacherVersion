@@ -1,0 +1,14 @@
+<view class="desc">
+  <view class="desc_title">个人描述</view>
+  <view class="desc_desc">个人描述会在小程序用户端，个人主页展示哦，有力量的文字会被更多的家长喜欢哦。</view>
+  <view class="xian" style=" margin-top: 120rpx;"></view>
+
+  <textarea class="texttar" autofocus="autofocus" placeholder="欢迎输入个人描述"></textarea>
+
+  <view class="xian"></view>
+  <view class="tishi">注意事项:编辑完毕的个人描述，7天之后才能重新更新修改哦。</view>
+
+</view>
+<view class="mai">
+  <view class="maibtn" bindtap="purchaseHander">完成</view>
+</view>

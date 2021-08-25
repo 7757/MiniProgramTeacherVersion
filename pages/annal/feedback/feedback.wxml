@@ -1,0 +1,27 @@
+<view class="desc">
+  <view class="desc_title">总结分析</view>
+  <view class="desc_desc">老师每句用心的点评，都会在孩子的内心生根萌芽。</view>
+
+  <view class="btn_list">
+    <view class="item_list" style=" background: rgba(227, 242, 242, 1) ;color: rgba(0, 116, 120, 1)">熊娟娟</view>
+    <view class="item_list">{{classData.courseName}}</view>
+    <view class="item_list">{{classData.className}}</view>
+    <view class="item_list">{{classData.shchoolName}}</view>
+  </view>
+  <view class="btn_lists">
+    <view class="item_list" style="width:356rpx;margin-right: 16rpx;">{{classData.courseDate+''}}{{classData.courseTime}} </view>
+    <view class="item_list" style="width:220rpx; background:rgba(244, 243, 234, 1) ;color: rgba(105, 81, 48, 1)">{{classData.scope+''}}分·排名前{{classData.ranking}}%</view>
+  </view>
+
+
+
+  <view class="xian" style=" margin-top: 60rpx;"></view>
+
+  <textarea class="texttar" autofocus="autofocus" bindinput="bindTextAreaChange"   value="{{info}}"  maxlength="{{noteMaxLen}}" placeholder="欢迎输入个人描述"></textarea>
+  <uploadImages bindmyevent="myEventListener" count='{{countPic}}' showUrl="{{showImgUrl}}" uploadUrl="{{uploadImgUrl}}"></uploadImages>
+  <view class="xian"></view>
+  <view class="tishi">注意事项:编辑完毕的课堂反馈,孩子家长会对您本节课评价,及时关注评价提醒哦。</view>
+</view>
+<view class="mai">
+  <view class="maibtn" bindtap="purchaseHander">完成</view>
+</view>

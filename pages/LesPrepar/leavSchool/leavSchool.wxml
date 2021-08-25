@@ -1,0 +1,17 @@
+<view class="root">
+<view class="title_top">离校管理</view>
+
+
+
+<checkbox-group bindchange="checkboxChange" class="chexckbox_root">
+  <label class="checkbox" wx:for="{{items}}" wx:key="index">
+    <view>{{item.value}}</view>
+    <checkbox value="{{item.name}},{{item.value}}" checked="{{item.checked}}" disabled="{{item.disabled}}" class="disabled"/>
+  </label>
+</checkbox-group>
+</view>
+
+<!--底部按钮  -->
+<view class="bottom_bar">
+  <view class="contact_him" bindtap="completeHander">完成</view>
+</view>

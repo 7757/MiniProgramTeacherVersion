@@ -1,0 +1,10 @@
+{
+"usingComponents": {
+  "calendar": "/../../../component/calendar/calendar2/index"
+},
+"navigationBarBackgroundColor": "#ffffff",
+"navigationBarTextStyle": "black",
+"navigationBarTitleText": "选择时间",
+"backgroundColor": "#eeeeee",
+"backgroundTextStyle": "light"
+}

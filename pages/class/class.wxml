@@ -1,0 +1,137 @@
+<view class="top_position">
+  <view class="title_top">课时统计</view>
+  <view class="title_details">建立指标计划，对标市场， 结果导向，高效自我管理。</view>
+  <!-- 遮罩 -->
+  <view class="btn_list">
+    <!-- 按钮 -->
+    <scroll-view scroll-x="true" class="scroll_class btn_tess" style="width: 100%">
+      <!-- 时间 -->
+      <view class="btn_item {{selectedDate!='时间'?'active':''}} " hover-class="wsui-btn__hover_list" bindtap="dateHander">{{selectedDate}}
+        <block wx:if="{{selectedDate!='时间'}}">
+          <image data-type="dateType" catchtap="removeHander"src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/ANANL/d096781c2e767be7f86261fc4f23f60.png"></image>
+        </block>
+      </view>
+
+      <!-- 课程 -->
+      <view class="btn_item  {{selectedCourse!='课程'?'active':''}}  " hover-class="wsui-btn__hover_list" bindtap="allCourseHander" data-type="courseType">{{selectedCourse}}
+        <block wx:if="{{selectedCourse!='课程'}}">
+          <image data-type="courseType" catchtap="removeHander" src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/ANANL/d096781c2e767be7f86261fc4f23f60.png"></image>
+        </block>
+      </view>
+      <!-- 校区 -->
+      <view class="btn_item  {{selectedSchool!='校区'?'active':''}} " hover-class="wsui-btn__hover_list" bindtap="allShoolHander" data-type="schoolType">{{selectedSchool}}
+        <block wx:if="{{selectedSchool!='校区'}}">
+          <image data-type="schoolType" catchtap="removeHander"src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/ANANL/d096781c2e767be7f86261fc4f23f60.png"></image>
+        </block>
+      </view>
+
+      <!-- 班级 -->
+      <view class="btn_item last_item {{selectedClasss!='班级'?'active':''}} " hover-class="wsui-btn__hover_list" bindtap="allClassHander" data-type="ClasssType">{{selectedClasss}}
+        <block wx:if="{{selectedClasss!='班级'}}">
+          <image  data-type="classsType" catchtap="removeHander"src="https://sappbkt.oss-cn-shanghai.aliyuncs.com/ANANL/d096781c2e767be7f86261fc4f23f60.png"></image>
+        </block>
+      </view>
+
+    </scroll-view>
+  </view>
+
+</view>
+
+<view class="cla">
+  <view class="quxian">曲线</view>
+  <view class="an_condition_1">
+    <view class="an_k_2">1D</view>
+    <view class="an_k_2">7D</view>
+    <view class="an_k_2">1M</view>
+  </view>
+</view>
+<!-- 差价 -->
+<view class="container" hidden='{{showStatus}}'>
+  <ec-canvas id="mychart" canvas-id="mychart-bar" ec="{{ec}}" ></ec-canvas>
+</view>
+<block wx:if="{{showStatus}}">
+<view style="height: 300px;width: 100%;"></view>
+</block>
+
+<view class="clas">
+  <view class="div">
+    月份
+    <view class="divtext">2019.12</view>
+  </view>
+  <view class="div">
+    总课时(次）
+    <view class="divtext">27</view>
+  </view>
+  <view class="div">
+    当周课时(次）
+    <view class="divtext">8</view>
+  </view>
+</view>
+
+
+<!-- 课程弹窗 -->
+<!-- 弹框 -->
+<view catchtouchmove="filterViewMove" class="weui-demo-dialog {{istrueCourse ?'weui-demo-dialog_show' : ''}}">
+  <!-- 遮罩 -->
+  <view class="weui-mask" bindtap="closeLayerCourse"></view>
+  <view class="weui-half-screen-dialog">
+    <view class="tk_title">
+      <view class="tk_biaoti">课程</view>
+      <view bindtap="closeLayerCourse" class="weui-icon-btn weui-icon-btn_close"></view>
+    </view>
+    <scroll-view scroll-y="true" style="height: 500rpx;" class="tkdx">
+      <radio-group class="radio_group" bindchange="choseItem">
+        <label class="xuanx" wx:for="{{courseAry}}" wx:key="index" data-index="{{index}}">
+          <view>{{item}}</view>
+          <radio value="{{item}}" checked="" />
+        </label>
+      </radio-group>
+    </scroll-view>
+    <view class="btnqd "data-type="Course" bindtap="determineHander">确定</view>
+  </view>
+</view>
+
+
+
+<!-- 校区弹窗 -->
+<!-- 弹框 -->
+<view catchtouchmove="preventTouchMove" class="weui-demo-dialog {{istrueSchool ? 'weui-demo-dialog_show' : ''}}">
+  <!-- 遮罩 -->
+  <view class="weui-mask" bindtap="closeLayerSchool"></view>
+  <view class="weui-half-screen-dialog">
+    <view class="tk_title">
+      <view class="tk_biaoti">校区</view>
+      <view bindtap="closeLayerSchool" class="weui-icon-btn weui-icon-btn_close"></view>
+    </view>
+    <scroll-view scroll-y="true" style="height: 500rpx;" class="tkdx">
+      <radio-group class="radio_group" bindchange="choseItem">
+        <label class="xuanx" wx:for="{{SchoolAry}}" wx:key="index" data-index="{{index}}">
+          <view>{{item}}</view>
+          <radio value="{{item}}" checked="" />
+        </label>
+      </radio-group>
+    </scroll-view>
+    <view class="btnqd "data-type="School" bindtap="determineHander">确定</view>
+  </view>
+</view>
+<!-- 班级弹窗 -->
+<!-- 弹框 -->
+<view catchtouchmove="preventTouchMove" class="weui-demo-dialog {{istrueClass ? 'weui-demo-dialog_show' : ''}}">
+  <!-- 遮罩 -->
+  <view class="weui-mask" bindtap="closeLayerClass"></view>
+  <view class="weui-half-screen-dialog">
+    <view class="tk_title">
+      <view class="tk_biaoti">班级</view>
+      <view bindtap="closeLayerClass" class="weui-icon-btn weui-icon-btn_close"></view>
+    </view>
+    <scroll-view scroll-y="true" style="height: 500rpx;" class="tkdx">
+      <radio-group class="radio_group" bindchange="choseItem">
+        <label class="xuanx" wx:for="{{ClassAry}}" wx:key="index" data-index="{{index}}">
+          <view>{{item}}</view>
+          <radio value="{{item}}" checked="" />
+        </label>
+      </radio-group>
+    </scroll-view>
+    <view class="btnqd " data-type="Class" bindtap="determineHander">确定</view>
+  </view>
+</view>

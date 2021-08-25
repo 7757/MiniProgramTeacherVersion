@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "uploadImages": "/component/uploadImages/index"
+  }
+  ,
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "课堂反馈",
+  "backgroundColor": "#eeeeee",
+  "backgroundTextStyle": "light"
+}

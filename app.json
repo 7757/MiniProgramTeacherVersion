@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/LesPrepar/LesPrepar",
+    "pages/class/class",
+    "pages/annal/annal",
+    "pages/annal/feedback/feedback",
+    "pages/LesPrepar/choseDate/choseDate",
+    "pages/LesPrepar/attMent/attMent",
+    "pages/LesPrepar/lesInfo/lesInfo",
+    "pages/LesPrepar/choseDate/selectTime/selectTime",
+    "pages/users/users",
+    "pages/users/birthday/birthday",
+    "pages/users/desc/desc",
+    "pages/users/info/info",
+    "pages/users/service/service",
+    "pages/annal/evalu/evalu",
+    "pages/annal/period/period",
+    "pages/annal/seastu/seastu"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "备课",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#777777",
+    "selectedColor": "#16080a",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/LesPrepar/LesPrepar",
+        "text": "备课",
+        "iconPath": "asstes/tabs/beikeweixuanzhong.png",
+        "selectedIconPath": "asstes/tabs/beike.png"
+      },
+      {
+        "pagePath": "pages/annal/annal",
+        "text": "记录",
+        "iconPath": "asstes/tabs/jiluweixuanzhong.png",
+        "selectedIconPath": "asstes/tabs/jilu.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "课时",
+        "iconPath": "asstes/tabs/keshiweixuanzhong.png",
+        "selectedIconPath": "asstes/tabs/keshi.png"
+      },
+      {
+        "pagePath": "pages/users/users",
+        "text": "我",
+        "iconPath": "asstes/tabs/meweixuanzhobng.png",
+        "selectedIconPath": "asstes/tabs/me.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

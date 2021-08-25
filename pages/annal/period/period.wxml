@@ -1,0 +1,30 @@
+<view class="period">
+
+  <view class="period_k">
+    <view class="period_time_all">全部时间段</view>
+  </view>
+
+  <view class="period_k">
+    <view class="period_time">08:00-09:00</view>
+    <view class="k"></view>
+    <view class="period_time">10:00-11:00</view>
+  </view>
+
+  <view class="period_k">
+    <view class="period_time">12:00-13:00</view>
+    <view class="k"></view>
+    <view class="period_time">14:00-15:00</view>
+  </view>
+
+  <view class="period_k">
+    <view class="period_time">16:00-17:00</view>
+    <view class="k"></view>
+    <view class="period_time">18:00-19:00</view>
+  </view>
+
+
+
+</view>
+<view class="mai">
+  <view class="maibtn" bindtap="purchaseHander">完成</view>
+</view>

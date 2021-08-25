@@ -1,0 +1,149 @@
+.desc {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.desc_title {
+  font-size: 23px;
+  font-weight: 600;
+  color: rgba(22, 8, 10, 1);
+}
+
+.desc_desc {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 1);
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.xian {
+  margin: 0px auto;
+  width: 100%;
+  height: 1px;
+  background-color: #efeeee;
+}
+
+.tishi {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 0.8);
+  line-height: 17px;
+}
+
+.texttar {
+  height: 200rpx;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 1);
+  line-height: 20px;
+}
+
+.mai {
+  position: fixed;
+  bottom: 0.1px;
+  width: 100%;
+  height: 82px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 4px 1px rgba(195, 194, 194, 0.5);
+}
+
+.maibtn {
+  width: 90%;
+  height: 48px;
+  background: rgba(0, 132, 137, 1);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  line-height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.btn_list {
+  display: flex;
+  margin-top: 46rpx;
+  justify-content: space-between;
+}
+
+.btn_lists {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+
+.item_list {
+  width: 152rpx;
+  height: 50rpx;
+  background: rgba(242, 242, 242, 1);
+  border-radius: 25rpx;
+  text-align: center;
+  font-size: 22rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(22, 8, 10, 1);
+  line-height: 50rpx;
+}
+
+
+.an_k_2 {
+  width: 66px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(223, 223, 223, 1);
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 0.8);
+  line-height: 32px;
+  margin-right: 15px;
+}
+
+.an_k_4 {
+  width: 110px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(223, 223, 223, 1);
+  font-size: 13px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 0.8);
+  line-height: 32px;
+  margin-right: 15px;
+}
+
+.an_k_7 {
+  width: 200px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid rgba(223, 223, 223, 1);
+  font-size: 13px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(22, 8, 10, 0.8);
+  line-height: 32px;
+  margin-right: 15px;
+}
+
+.an_k_7:hover {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 132, 137, 1);
+  color: rgba(0, 132, 137, 1);
+}
+.an_k_2:hover {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 132, 137, 1);
+  color: rgba(0, 132, 137, 1);
+}
+
+.an_k_4:hover {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 132, 137, 1);
+  color: rgba(0, 132, 137, 1);
+}

@@ -1,0 +1,13 @@
+<calendar calendarConfig="{{calendarConfig}}" bind:onTapDay="onTapDay" bind:afterTapDay="afterTapDay" bind:onSwipe="onSwipe" bind:whenChangeWeek="whenChangeWeek" bind:whenChangeMonth="whenChangeMonth" bind:afterCalendarRender="afterCalendarRender"></calendar>
+
+
+<view class="bottom_bar">
+  <view class="next_time" bindtap="resetHander">确定</view>
+</view>
+
+
+<view class="mask" catchtouchmove="preventTouchMove" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+
+<view class="modalDlg" animation="{{animationData}}" wx:if="{{showModalStatus}}">
+  对不起，您当前未选择时间!
+</view>

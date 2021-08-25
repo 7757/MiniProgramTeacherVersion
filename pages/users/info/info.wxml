@@ -1,0 +1,118 @@
+<view class="page">
+  <view class="userinfoform">
+
+    <view class="text-area">
+      <view class="title">用户信息</view>
+      <view class="desc">请在以下完善您的个人信息</view>
+    </view>
+
+    <view class="group_form">
+
+      <view class="cells_form">
+
+        <view class="cell">
+          <view class="cell__hd">
+            <label class="label">姓名</label>
+          </view>
+          <view class="cell__bd">
+            <input class="input" placeholder="请输入姓名" />
+          </view>
+        </view>
+
+        <view style="padding-bottom: 0rpx;" class="cell">
+          <view class="cell__hd">
+            <label class="label">电话</label>
+          </view>
+          <view class="weui-cell weui-cell_select">
+            <view class="weui-cell__hd" style="width: 20px">
+              <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+                <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+              </picker>
+            </view>
+            <view class="weui-cell__bd_in-select-before">
+              <input class="weui-inputs" type="phone" pattern="[0-9]*" placeholder="请输入号码" />
+            </view>
+          </view>
+        </view>
+
+        <view class="cell">
+          <view class="cell__hd">
+            <label class="label">性别</label>
+          </view>
+          <view class="cell__bd">
+            <radio-group class="radio-group" bindchange="radioChange">
+              <label class="radio" wx:for="{{items}}" wx:key="">
+                <radio value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+              </label>
+            </radio-group>
+          </view>
+        </view>
+
+        <view class="cell">
+          <view class="cell__hd">
+            <label class="label">生日</label>
+          </view>
+          <view class="cell__bd">
+            <view class="weui-input" bindtap="submit" >{{year+'年'}}{{month+'月'}}{{day+'日'}}  </view>
+            <!-- <view  wx:else class="weui-input" bindtap="submit" >选择生日时间</view> -->
+          </view>
+        </view>
+
+
+
+
+
+        <view class="mask"  bindtap="hideLayper" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+        <view class="modalDlg" wx:if="{{showModal}}" >
+          <view class="time_text">
+            <view  bindtap="hideLayper" class="list_layer cannl">取消</view>
+            <view   class="list_layer">选择生日</view>
+            <view   bindtap="go" class="list_layer">保存</view>
+          </view>
+          <view class="line"></view>
+          <picker-view indicator-class="picker-box" wx:if="{{years.length>0 && months.length>0 && days.length>0}}" style="width: 100%; height: 500rpx;" indicator-style="height: 50px;" class="view_picker" value="{{value}}" bindchange="bindChange">
+            <picker-view-column style='margin-left: 20rpx;'>
+              <view wx:for="{{years}}" class="view_picker_text" wx:key="{{index}}">{{item}}年</view>
+            </picker-view-column>
+            <picker-view-column>
+              <view wx:for="{{months}}" class="view_picker_text" wx:key="{{index}}">{{item}}月</view>
+            </picker-view-column>
+            <picker-view-column style='margin-right: 20rpx;'>
+              <view wx:for="{{days}}" class="view_picker_text" wx:key="{{index}}">{{item}}日</view>
+            </picker-view-column>
+          </picker-view>
+        </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </view>
+    </view>
+
+
+
+
+
+  </view>
+
+
+
+  <view class="bottom_bar">
+    <view class="next_time" bindtap="backHander">保存信息</view>
+  </view>
+
+</view>
