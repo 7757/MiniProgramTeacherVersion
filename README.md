@@ -1,0 +1,2 @@
+# MiniProgramTeacherVersion
+一个老师端教育类目小程序
